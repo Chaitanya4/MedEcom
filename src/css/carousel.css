@@ -1,0 +1,71 @@
+
+.carousel-indicators li {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: 
+#2931a2;
+background-clip: padding-box;
+border-top: 10px solid
+transparent;
+border-bottom: 10px solid
+    transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+.carousel-indicators li:active{
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: 
+#0c125f;
+background-clip: padding-box;
+border-top: 10px solid
+transparent;
+border-bottom: 10px solid
+    transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+
+.fixed_img1 {
+    width: 100%;
+    height: 300px;
+  }
+  
+
+  .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
+    color: black;
+    background: white;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+   
+  }
+
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+ 
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  left: 2rem;
+}
+
+.owl-carousel .owl-nav button.owl-next{
+  right: 2rem;
+}

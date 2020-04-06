@@ -1,0 +1,57 @@
+
+  .owl-carousel .owl-item img {
+    display: block;
+    width:60%;
+}
+
+
+
+
+.fixed_img {
+    width: 100px;
+    height: 50px;
+  }
+
+  .navbar {
+    font-weight: 300;
+   box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+ 
+    background-size: 100% 100%;
+    background-color: 
+    black;
+}
+
+@media only screen and (min-width: 300px) and (max-width:700px) 
+{
+    .md-form.md-bg label {
+        top: 0;
+        padding-left: .7rem;
+        font-size: 10px;
+        transition: transform .2s ease-out, color .2s ease-out;
+        transform: translateY(13px);
+        transform-origin: 0% 100%;
+    }
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  background-color: 
+  rgb(157, 172, 179);
+}
+.md-form.input-group .input-group-text {
+  background-color: 
+  rgb(157, 172, 179);
+  border:none;
+}

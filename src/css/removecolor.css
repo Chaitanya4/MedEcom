@@ -1,0 +1,3 @@
+.rgba-white-slight, .rgba-white-slight::after {
+    background-color: unset;
+}
