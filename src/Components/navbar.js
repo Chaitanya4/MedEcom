@@ -4,6 +4,7 @@ import {MDBNavLink,MDBDropdown,MDBDropdownToggle,MDBDropdownItem,MDBDropdownMenu
 MDBNavbar, MDBNavbarBrand, MDBIcon, MDBNavbarNav, MDBNavItem,  MDBNavbarToggler, MDBCollapse, MDBContainer,MDBListGroup, MDBListGroupItem
 
 } from "mdbreact";
+
 import { BrowserRouter as Router } from 'react-router-dom';
 //import { FaShoppingCart } from 'react-icons/fa';
 import './../css/styling.css';
@@ -55,7 +56,7 @@ render() {
         
       <MDBNavbar className="black-text font1 fontsize1" dark expand="lg">
         <MDBNavbarBrand>
-        <strong className="black-text"><Link to="/" >Your Logo </Link></strong>
+        <strong className="black-text"><Link to="/" onClick={event =>  window.location.href='/'} >Your Logo </Link></strong>
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
@@ -64,7 +65,7 @@ render() {
               <MDBNavLink to="#!"><MDBBtn rounded color="white btn-sm border_radious_20" className="text-blue" style={{...shadow,...buttonborder}}><b>MEDICINE</b></MDBBtn></MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="#!"><MDBBtn rounded color="info btn-sm border_radious_20" style={shadow1}><b>CONSULT A DOCTOR</b></MDBBtn></MDBNavLink>
+              <MDBNavLink to="/ConsultDoctor"><MDBBtn rounded color="info btn-sm border_radious_20" style={shadow1} onClick={event =>  window.location.href='/ConsultDoctor'}><b>CONSULT A DOCTOR</b></MDBBtn></MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBNavLink to="#!"><MDBBtn rounded color="white btn-sm border_radious_20" className="text-blue" style={{...shadow,...buttonborder}}><b>BOOK APPOINTMENT</b></MDBBtn></MDBNavLink>
@@ -82,10 +83,10 @@ render() {
               
             </MDBNavItem>
             <MDBNavItem>
-            <MDBBtn outline color="dark btn-md btn-head" style={shadow}>Login</MDBBtn>
+            <MDBBtn outline color="dark btn-md btn-head" style={shadow} onClick={event =>  window.location.href='/LoginPage'}>Login</MDBBtn>
             </MDBNavItem>
             <MDBNavItem>
-            <MDBBtn outline color="dark btn-md btn-head" style={shadow}>Register</MDBBtn>
+            <MDBBtn outline color="dark btn-md btn-head" style={shadow} onClick={event =>  window.location.href='/RegisterPage'}>Register</MDBBtn>
             </MDBNavItem>
            
           </MDBNavbarNav>

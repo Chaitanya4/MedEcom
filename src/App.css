@@ -237,10 +237,30 @@ color:#f44242;
 {
   text-transform: capitalize;
 }
+@media only screen and (min-width: 550px){
+ 
+.stylebuttonl{
+  box-shadow: none;
+  color : gray;
+width: 100%;
+border-radius:5rem
+}
+.stylebuttoncoll{
+  align-items:stretch;
+justify-content: space-between;
+  width: 100%;
+  display: flex
+}
+}
 @media only screen and (min-width: 100px) and (max-width: 550px){
+  .stylebuttonl{
+    box-shadow: none;
+    color : gray;
 
+  border-radius:5rem
+  }
   .imgshrink{
-    width: 10%;
+    width: 15%;
   }
   .fhshrink{
     font-size: 1.5rem;

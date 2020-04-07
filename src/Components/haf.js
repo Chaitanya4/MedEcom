@@ -45,8 +45,8 @@ const Health = () => {
               </MDBRow>
                 
                      <MDBRow 
-  style={rowpad}><p className="producthead  pl-2 ml-2 contentoverflow">Ensure diabetes care powder</p></MDBRow>
-                     <MDBRow style={rowpad}><p className="text-center proddescribe pl-2 contentoverflow">box of 90gm powder</p></MDBRow>
+  style={rowpad}><p className="producthead contentoverflow">Ensure diabetes care powder</p></MDBRow>
+                     <MDBRow style={rowpad}><p className="text-center proddescribe  contentoverflow">box of 90gm powder</p></MDBRow>
                  
             
                      <MDBRow style={rowpad}>
@@ -76,8 +76,8 @@ const Health = () => {
               </MDBRow>
                 
                      <MDBRow 
-  style={rowpad}><p className="producthead  pl-2 ml-2 contentoverflow">Zandu Kesari Jeevan Fit for Diabetics</p></MDBRow>
-                     <MDBRow style={rowpad}><p className="text-center proddescribe pl-2 contentoverflow">bottle of 90 tablets</p></MDBRow>
+  style={rowpad}><p className="producthead  contentoverflow">Zandu Kesari Jeevan Fit for Diabetics</p></MDBRow>
+                     <MDBRow style={rowpad}><p className="text-center proddescribe contentoverflow">bottle of 90 tablets</p></MDBRow>
                  
             
                      <MDBRow style={rowpad}>
@@ -107,8 +107,8 @@ const Health = () => {
               </MDBRow>
                 
                      <MDBRow 
-  style={rowpad}><p className="producthead  pl-2 ml-2 contentoverflow">Sugar free Natural Powder</p></MDBRow>
-                     <MDBRow style={rowpad}><p className="text-center proddescribe pl-2 contentoverflow">Liquid</p></MDBRow>
+  style={rowpad}><p className="producthead  contentoverflow">Sugar free Natural Powder</p></MDBRow>
+                     <MDBRow style={rowpad}><p className="text-center proddescribe contentoverflow">Liquid</p></MDBRow>
                  
             
                      <MDBRow style={rowpad}>
@@ -140,8 +140,8 @@ const Health = () => {
               </MDBRow>
                 
                      <MDBRow 
-  style={rowpad}><p className="producthead  pl-2 ml-2 contentoverflow">Ensure diabetes care powder</p></MDBRow>
-                     <MDBRow style={rowpad}><p className="text-center proddescribe pl-2 contentoverflow">box of 90gm powder</p></MDBRow>
+  style={rowpad}><p className="producthead contentoverflow">Ensure diabetes care powder</p></MDBRow>
+                     <MDBRow style={rowpad}><p className="text-center proddescribe contentoverflow">box of 90gm powder</p></MDBRow>
                  
             
                      <MDBRow style={rowpad}>
@@ -171,8 +171,8 @@ const Health = () => {
               </MDBRow>
                 
                      <MDBRow 
-  style={rowpad}><p className="producthead  pl-2 ml-2 contentoverflow">Zandu Kesari Jeevan Fit for Diabetics</p></MDBRow>
-                     <MDBRow style={rowpad}><p className="text-center proddescribe pl-2 contentoverflow">bottle of 90 tablets</p></MDBRow>
+  style={rowpad}><p className="producthead contentoverflow">Zandu Kesari Jeevan Fit for Diabetics</p></MDBRow>
+                     <MDBRow style={rowpad}><p className="text-center proddescribe contentoverflow">bottle of 90 tablets</p></MDBRow>
                  
             
                      <MDBRow style={rowpad}>
@@ -202,8 +202,8 @@ const Health = () => {
               </MDBRow>
                 
                      <MDBRow 
-  style={rowpad}><p className="producthead  pl-2 ml-2 contentoverflow">Sugar free Natural Powder</p></MDBRow>
-                     <MDBRow style={rowpad}><p className="text-center proddescribe pl-2 contentoverflow">Liquid</p></MDBRow>
+  style={rowpad}><p className="producthead  contentoverflow">Sugar free Natural Powder</p></MDBRow>
+                     <MDBRow style={rowpad}><p className="text-center proddescribe contentoverflow">Liquid</p></MDBRow>
                  
             
                      <MDBRow style={rowpad}>
@@ -227,7 +227,7 @@ const Health = () => {
         
        
         </MDBRow>
-       
+     
         </section>
   );
 }
