@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-import {  MDBRow, MDBCol,MDBNav,MDBNavItem,MDBNavLink,MDBTabContent,MDBTabPane,  MDBListGroup, MDBListGroupItem,MDBCard,MDBContainer, MDBCardImage, MDBCardBody, MDBBadge, MDBBtn } from "mdbreact";
+import {  MDBRow, MDBCol,MDBNav,MDBNavItem,MDBNavLink,MDBTabContent,MDBTabPane, MDBIcon, MDBListGroup, MDBListGroupItem,MDBCard,MDBContainer, MDBCardImage, MDBCardBody, MDBBadge, MDBBtn } from "mdbreact";
 import icon_new_arrival from './../images/icon_new_arrivals.png';
 import ensure from './../images/ensure.jpeg';
 import  sugarfree from './../images/sugarfree.jpeg';
@@ -14,6 +14,17 @@ width:'100%',
 
 border: "1px solid #33b5e5"
 }
+const inborder={
+    border:'1px solid rgb(189, 198, 200)',
+    borderRadius:'2rem',
+    width:'40%'
+  }
+  const bgcolor={
+    backgroundColor:'#fff0'
+  }
+  const bnone={
+    borderBottom:'none'
+  }
 const slantdiv={backgroundImage: 'linear-gradient(60deg, #33b5e5 20%, rgba(0, 0, 0, 0) 0%)',textAlign:'left',color:'white'}
 class FreqCust extends Component{
     
@@ -98,6 +109,14 @@ fontSize: 18}}>Atul Agnihotri</p>
     
     </MDBRow>
     </MDBListGroupItem>
+    <MDBListGroupItem style={{boxShadow: '0 0 10px rgb(51, 181, 229)'}}> <MDBRow>
+    <i class="fas fa-paperclip mt-2 mx-3 grey-text" style={{fontSize:'1.5rem'}} ></i>
+    <div className="input-group md-form form-sm form-1 pl-0 mt-0 mb-0 " style={{...bgcolor,...inborder}}>
+       
+        <input className="form-control my-0 font1 fontsize1" type="text" placeholder="Comment Something" style={{...bgcolor,...bnone}} aria-label="Search" /><i class="far fa-paper-plane mr-4 mt-1 grey-text" style={{fontSize:'1.5rem'}}></i>
+      </div>
+    </MDBRow>
+    </MDBListGroupItem>
     
   </MDBListGroup>
 
@@ -109,14 +128,14 @@ fontSize: 18}}>Atul Agnihotri</p>
 width: '30%',marginTop:'0.75rem'}} /></MDBRow>
 <MDBRow style={{border: '1px solid #ced0d2',margin: 0,borderRadius: '0.3rem'}} className="mb-4 mt-1">
     <MDBRow>
-    <MDBCol lg="4" md="4" sm="4" >
+    <MDBCol lg="4" md="4" sm="12" >
     <img className="mx-auto mt-1" src={daburch} alt="dabur" style={{height:95}}/>
     </MDBCol>
-    <MDBCol lg="8" md="8" sm="8">
-<MDBRow>
+    <MDBCol lg="8" md="8" sm="12">
+<MDBRow  className="ml-0">
     <h5 className="text-left mt-2 mb-3 pl-2" style={{fontWeight:500}}> Dabur Chywanprash sugarfree</h5>
 </MDBRow>
-<MDBRow>
+<MDBRow  className="ml-0">
     <MDBCol className="pl-2 pr-0" style={{display:'grid',justifyContent:'flex-start'}}><span className="text-left grey-text" style={{fontSize:'14px'}}><b>MRP</b> <span style={{textDecoration:'line-through'}}><b>900</b></span></span>
             <h6 style={{color:"black",fontSize:18}} ><b>₹ 198</b></h6></MDBCol>
    
@@ -124,16 +143,24 @@ width: '30%',marginTop:'0.75rem'}} /></MDBRow>
     </MDBCol>
    
     </MDBRow>
-     
+    
+    
+    <MDBRow className=" mr-0 ml-5 my-1" style={{width:'100%'}}>
+        
+        <h5 className=" pb-0" style={{fontSize:'250%'}}><b>+</b></h5><hr style={{border: '2px solid #d6d6e6',
+
+width: '70%',marginTop:'1.5rem'}} />
+           </MDBRow>
+
     <MDBRow>
-    <MDBCol lg="4" md="4" sm="4" >
+    <MDBCol lg="4" md="4" sm="12" >
     <img className="mx-auto mt-1" src={daburch} alt="dabur" style={{height:95}}/>
     </MDBCol>
-    <MDBCol lg="8" md="8" sm="8">
-<MDBRow>
+    <MDBCol lg="8" md="8" sm="12">
+<MDBRow className="ml-0">
     <h5 className="text-left mt-2 mb-3 pl-2" style={{fontWeight:500}}> Dabur Chywanprash sugarfree</h5>
 </MDBRow>
-<MDBRow>
+<MDBRow  className="ml-0">
     <MDBCol className="pl-2 pr-0" style={{display:'grid',justifyContent:'flex-start'}}><span className="text-left grey-text" style={{fontSize:'14px'}}><b>MRP</b> <span style={{textDecoration:'line-through'}}><b>900</b></span></span>
             <h6 style={{color:"black",fontSize:18}} ><b>₹ 198</b></h6></MDBCol>
    

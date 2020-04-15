@@ -454,3 +454,18 @@ height: 100%;
 height: 3.5rem;
 border-radius: 50%;
 }
+.plusdiv{
+  width:100%;
+  display: inline;
+  
+}
+.plusdiv::after{
+  background-color: #e0e0e0;
+content: "";
+display: inline-block;
+height: 1px;
+position: relative;
+vertical-align: middle;
+width: calc(100% - 75px);
+margin-left: 55px;
+}
