@@ -1,4 +1,4 @@
-import React from "react";
+import React,{Component} from "react";
 import {  MDBRow, MDBCol, MDBCard,MDBContainer, MDBCardImage, MDBCardBody, MDBBadge, MDBBtn } from "mdbreact";
 import icon_new_arrival from './../images/icon_new_arrivals.png';
 import ensure from './../images/ensure.jpeg';
@@ -7,229 +7,395 @@ import zandu from './../images/zandu.jpg';
 import sale from './../images/sale.jpg';
 import bg_health_fitness from './../images/bg_health_fitness.png';
 import icon_health from './../images/icon_health.png';
-const rowpad = {
+const stylebadge={height:"2rem",
+borderRadius:"10px 0px 10px 0",display:'flex',width:'auto',justifyContent:'center',position: 'absolute',
+left:0,
+top: 0}  
+const rowpad1={
   marginLeft:0,
   marginRight:0,
-  justifyContent: 'center'
-
+  display:'block'
 };
-
+const rowpad = {
+   marginLeft:0,
+   marginRight:0,
+   justifyContent: 'center'
+ };
+ 
 const shadow={
-  boxShadow:'none'
+   boxShadow:'none'
 }
-const Health = () => {
-  return (
-    <section className="text-center my-5">
-        
-        <MDBRow className="pl-0 " style={{backgroundImage:  "url(" +bg_health_fitness+ ")", backgroundColor:"rgb(203, 236, 233)"}}> 
-        <MDBCol className="d-flex justify-content-center justify-content-lg-start align-items-center"  lg="5" md="12" sm="12"><h3 className="pl-4 pr-4 prcardheading">  
+
+class Health extends Component{
+  state = {
+    value: 1
+  }
+
+  decrease = () => {
+    this.setState({ value: this.state.value - 1 });
+    if(this.state.value<=1)
+    {
+      document.getElementById('haddbtn').style.display='flex';
+      document.getElementById('hproductadd').style.display='none';
+    }
+  }
+
+  increase = () => {
+    this.setState({ value: this.state.value + 1 });
+  }
+  fSubmit(e)
+{
+  this.setState({ value: 1});
+  document.getElementById('hproductadd').style.display='flex';
+  document.getElementById('haddbtn').style.display='none';
+
+}
+  render(){
+    return (
+      <section className="text-center my-5">
+          
+          <MDBRow className="pl-0 " style={{backgroundImage:  "url(" +bg_health_fitness+ ")", backgroundColor:"rgb(203, 236, 233)"}}> 
+<MDBCol className="d-flex justify-content-center justify-content-md-start align-items-center"  lg="5" md="7" sm="12"><h3 className="pl-4 pr-4 prcardheading">  
 <img src={icon_health} alt="new_a rrivals"/>Health &amp; Fitness Products</h3></MDBCol>   
-  
-    <MDBCol lg="4" md="0" sm="0"></MDBCol>
-   <MDBCol className="d-flex justify-content-center justify-content-lg-end align-items-center" lg="3" md="12" sm="12"> <MDBBtn color="primary pull-right viewallbtn cbtn" >View All</MDBBtn>
-    <MDBBtn color="primary pull-right viewallbtn" >&lt;</MDBBtn>
-    <MDBBtn color="primary pull-right viewallbtn" >&gt;</MDBBtn></MDBCol>
-    
-    
-     </MDBRow>
-    
-    
-     <MDBRow className="mt-4 ml-3 mr-3" style={{justifyContent:'center'}}>
-        <MDBCol lg="2" md="4" sm="6"  className="px-1 pb-3" >
-        <MDBCard style={shadow} className="ml-1 mr-1 mb-1 pr-2 pl-2 border border-gray cardradius h-100" >
+
+<MDBCol lg="4" md="1" sm="0"></MDBCol>
+<MDBCol className="d-flex justify-content-center justify-content-md-end align-items-center pl-4 pr-4" lg="3" md="4" sm="12"> <MDBBtn color="info pull-right viewallbtn cbtn" >View All</MDBBtn>
+<MDBBtn color="info pull-right viewallbtn" >&lt;</MDBBtn>
+<MDBBtn color="info pull-right viewallbtn" >&gt;</MDBBtn></MDBCol>
+
+
+</MDBRow>
+       <MDBRow className="mt-4 ml-3 mr-3" style={{justifyContent:'center'}}>
+       <MDBCol lg="2" md="4" sm="6"  className="px-1 pb-3" >
+      <MDBCard style={shadow} className="ml-1 mr-1 mb-1 pr-1 pl-1 border border-gray cardradius h-100" >
      
         <MDBRow style={rowpad} >
-             <MDBBadge color="danger" className="align-items-center" style={{height:"3rem", marginLeft:"-0.5rem",border:"1px solid azure",
-  borderRadius:"10px 0px 10px 0",display:'flex',justifyContent:'center'}}>10% off</MDBBadge>
+            
                  <img className="mx-auto my-2" src={ensure} style={{height:110,width:80}} alt="zandu"></img>
               </MDBRow>
-                
+              
+  <MDBBadge color="danger" className="align-items-center" style={stylebadge}>10% off</MDBBadge>
+                 
                      <MDBRow 
-  style={rowpad}><p className="producthead contentoverflow">Ensure diabetes care powder</p></MDBRow>
-                     <MDBRow style={rowpad}><p className="text-center proddescribe  contentoverflow">box of 90gm powder</p></MDBRow>
+  style={rowpad}><p className="producthead contentoverflow pl-2 pr-2">Ensure diabetes care powder</p></MDBRow>
+                     <MDBRow style={rowpad1}><p className="text-left proddescribe contentoverflow pl-2 pr-2">box of 90gm powder</p></MDBRow>
                  
             
-                     <MDBRow style={rowpad}>
+                    
                         
-                       <MDBCol style={{marginLeft:'-1.2rem'}}>
-  
-                       <p className=" ml-0 mb-0 mt-0 pl-1 prodprice" >₹198</p>
+                      <div style={rowpad1}>
+                        <div className="float-left">
+                         
+                        <p className=" ml-0 mb-0 mt-0 pl-0 prodprice " >₹198</p>
+                        </div>
                      
-                       
-                
-                       </MDBCol>
-                     <MDBCol style={{marginRight:'-2rem'}}> 
                      
-                      <MDBBtn color="addbtn"  className=" px-2 py-1 ml-0 mt-0 mr-1 addbtn" rounded >Add</MDBBtn></MDBCol>
+                       <div className="float-right">
+
+                       <div className="pmclass " style={{display:'none'}} id="hproductadd">
+                       <div className="mclass" onClick={this.decrease}>
+                       -
+                         </div>
+                         <div className="nclass">
+{this.state.value}
+                         </div>
+                         <div className="pclass" onClick={this.increase}>
+                        +
+
+                         </div>
+            </div>
+                      <MDBBtn color="addbtn"  id="haddbtn" className=" px-2 py-0 ml-0 mt-0 mr-1 addbtn " rounded onClick={(e)=>this.fSubmit(e)}>Add</MDBBtn>
               
-             </MDBRow>
-            </MDBCard>
-         
-          
-          </MDBCol>
-        
-          <MDBCol lg="2" md="4" sm="6"  className="px-1 pb-3">
-        <MDBCard style={shadow} className="ml-1 mr-1 mb-1 pr-2 pl-2 border border-gray cardradius h-100" >
-     
-        <MDBRow style={rowpad} >
-              <img className="mx-auto my-2" src={zandu} style={{height:110,width:80}} alt="zandu"></img>
-              </MDBRow>
+
+                       </div>
                 
-                     <MDBRow 
-  style={rowpad}><p className="producthead  contentoverflow">Zandu Kesari Jeevan Fit for Diabetics</p></MDBRow>
-                     <MDBRow style={rowpad}><p className="text-center proddescribe contentoverflow">bottle of 90 tablets</p></MDBRow>
-                 
+                      
+                    
+                      </div>
+  
+                     
             
-                     <MDBRow style={rowpad}>
-                        
-                       <MDBCol style={{marginLeft:'-1.2rem'}}>
-  
-                       <p className=" ml-0 mb-0 mt-0 pl-1 prodprice" >₹198</p>
-                     
-                       
-                
-                       </MDBCol>
-                     <MDBCol style={{marginRight:'-2rem'}}> 
-                     
-                      <MDBBtn color="addbtn"  className=" px-2 py-1 ml-0 mt-0 mr-1 addbtn" rounded >Add</MDBBtn></MDBCol>
-              
-             </MDBRow>
             </MDBCard>
          
           
           </MDBCol>
         
           <MDBCol lg="2" md="4" sm="6"  className="px-1 pb-3" >
-        <MDBCard style={shadow} className="ml-1 mr-1 mb-1 pr-2 pl-2 border border-gray cardradius h-100" >
+      <MDBCard style={shadow} className="ml-1 mr-1 mb-1 pr-1 pl-1 border border-gray cardradius h-100" >
      
         <MDBRow style={rowpad} >
-               <img className="mx-auto my-2" src={sugarfree} style={{height:110,width:80}} alt="zandu"></img>
+            
+                 <img className="mx-auto my-2" src={zandu} style={{height:110,width:80}} alt="zandu"></img>
               </MDBRow>
-                
+              
+  <MDBBadge color="danger" className="align-items-center" style={stylebadge}>30% off</MDBBadge>
+                 
                      <MDBRow 
-  style={rowpad}><p className="producthead  contentoverflow">Sugar free Natural Powder</p></MDBRow>
-                     <MDBRow style={rowpad}><p className="text-center proddescribe contentoverflow">Liquid</p></MDBRow>
+  style={rowpad}><p className="producthead contentoverflow pl-2 pr-2">Zandu Kesari Jeevan Fit for Diabetics</p></MDBRow>
+                     <MDBRow style={rowpad1}><p className="text-left proddescribe contentoverflow pl-2 pr-2">bottle of 90 tablets</p></MDBRow>
                  
             
-                     <MDBRow style={rowpad}>
+                    
                         
-                       <MDBCol style={{marginLeft:'-1.2rem'}}>
-  
-                       <p className=" ml-0 mb-0 mt-0 pl-1 prodprice" >₹198</p>
+                      <div style={rowpad1}>
+                        <div className="float-left">
+                         
+                        <p className=" ml-0 mb-0 mt-0 pl-0 prodprice " >₹198</p>
+                        </div>
                      
-                       
-                
-                       </MDBCol>
-                     <MDBCol style={{marginRight:'-2rem'}}> 
                      
-                      <MDBBtn color="addbtn"  className=" px-2 py-1 ml-0 mt-0 mr-1 addbtn" rounded >Add</MDBBtn></MDBCol>
+                       <div className="float-right">
+
+                       <div className="pmclass " style={{display:'none'}} id="hproductadd">
+                       <div className="mclass" onClick={this.decrease}>
+                       -
+                         </div>
+                         <div className="nclass">
+{this.state.value}
+                         </div>
+                         <div className="pclass" onClick={this.increase}>
+                        +
+
+                         </div>
+            </div>
+                      <MDBBtn color="addbtn"  id="haddbtn" className=" px-2 py-0 ml-0 mt-0 mr-1 addbtn " rounded>Add</MDBBtn>
               
-             </MDBRow>
+
+                       </div>
+                
+                      
+                    
+                      </div>
+  
+                     
+            
+            </MDBCard>
+         
+          
+          </MDBCol>
+       
+          <MDBCol lg="2" md="4" sm="6"  className="px-1 pb-3" >
+      <MDBCard style={shadow} className="ml-1 mr-1 mb-1 pr-1 pl-1 border border-gray cardradius h-100" >
+     
+        <MDBRow style={rowpad} >
+            
+                 <img className="mx-auto my-2" src={sugarfree} style={{height:110,width:80}} alt="zandu"></img>
+              </MDBRow>
+              
+              
+                     <MDBRow 
+  style={rowpad}><p className="producthead contentoverflow pl-2 pr-2">Sugar free Natural Powder</p></MDBRow>
+                     <MDBRow style={rowpad1}><p className="text-left proddescribe contentoverflow pl-2 pr-2">Liquid</p></MDBRow>
+                 
+            
+                    
+                        
+                      <div style={rowpad1}>
+                        <div className="float-left">
+                         
+                        <p className=" ml-0 mb-0 mt-0 pl-0 prodprice " >₹98</p>
+                        </div>
+                     
+                     
+                       <div className="float-right">
+
+                       <div className="pmclass " style={{display:'none'}} id="hproductadd">
+                       <div className="mclass" onClick={this.decrease}>
+                       -
+                         </div>
+                         <div className="nclass">
+{this.state.value}
+                         </div>
+                         <div className="pclass" onClick={this.increase}>
+                        +
+
+                         </div>
+            </div>
+                      <MDBBtn color="addbtn"  id="haddbtn" className=" px-2 py-0 ml-0 mt-0 mr-1 addbtn " rounded >Add</MDBBtn>
+              
+
+                       </div>
+                
+                      
+                    
+                      </div>
+  
+                     
+            
+            </MDBCard>
+         
+          
+          </MDBCol>
+       
+          <MDBCol lg="2" md="4" sm="6"  className="px-1 pb-3" >
+      <MDBCard style={shadow} className="ml-1 mr-1 mb-1 pr-1 pl-1 border border-gray cardradius h-100" >
+     
+        <MDBRow style={rowpad} >
+            
+                 <img className="mx-auto my-2" src={ensure} style={{height:110,width:80}} alt="zandu"></img>
+              </MDBRow>
+              
+             
+                     <MDBRow 
+  style={rowpad}><p className="producthead contentoverflow pl-2 pr-2">Ensure diabetes care powder</p></MDBRow>
+                     <MDBRow style={rowpad1}><p className="text-left proddescribe contentoverflow pl-2 pr-2">box of 90gm powder</p></MDBRow>
+                 
+            
+                    
+                        
+                      <div style={rowpad1}>
+                        <div className="float-left">
+                         
+                        <p className=" ml-0 mb-0 mt-0 pl-0 prodprice " >₹198</p>
+                        </div>
+                     
+                     
+                       <div className="float-right">
+
+                       <div className="pmclass " style={{display:'none'}} id="hproductadd">
+                       <div className="mclass" onClick={this.decrease}>
+                       -
+                         </div>
+                         <div className="nclass">
+{this.state.value}
+                         </div>
+                         <div className="pclass" onClick={this.increase}>
+                        +
+
+                         </div>
+            </div>
+                      <MDBBtn color="addbtn"  id="haddbtn" className=" px-2 py-0 ml-0 mt-0 mr-1 addbtn " rounded >Add</MDBBtn>
+              
+
+                       </div>
+                
+                      
+                    
+                      </div>
+  
+                     
+            
             </MDBCard>
          
           
           </MDBCol>
         
           <MDBCol lg="2" md="4" sm="6"  className="px-1 pb-3" >
-        <MDBCard style={shadow} className="ml-1 mr-1 mb-1 pr-2 pl-2 border border-gray cardradius h-100" >
+      <MDBCard style={shadow} className="ml-1 mr-1 mb-1 pr-1 pl-1 border border-gray cardradius h-100" >
      
         <MDBRow style={rowpad} >
-             <MDBBadge color="danger" className="align-items-center" style={{height:"3rem", marginLeft:"-0.5rem",border:"1px solid azure",
-  borderRadius:"10px 0px 10px 0",display:'flex',justifyContent:'center'}}>10% off</MDBBadge>
-                 <img className="mx-auto my-2" src={ensure} style={{height:110,width:80}} alt="zandu"></img>
+            
+                 <img className="mx-auto my-2" src={zandu} style={{height:110,width:80}} alt="zandu"></img>
               </MDBRow>
-                
+              
+               
                      <MDBRow 
-  style={rowpad}><p className="producthead contentoverflow">Ensure diabetes care powder</p></MDBRow>
-                     <MDBRow style={rowpad}><p className="text-center proddescribe contentoverflow">box of 90gm powder</p></MDBRow>
+  style={rowpad}><p className="producthead contentoverflow pl-2 pr-2">Zandu Kesari Jeevan Fit for Diabetics</p></MDBRow>
+                     <MDBRow style={rowpad1}><p className="text-left proddescribe contentoverflow pl-2 pr-2">bottle of 90 tablets</p></MDBRow>
                  
             
-                     <MDBRow style={rowpad}>
+                    
                         
-                       <MDBCol style={{marginLeft:'-1.2rem'}}>
-  
-                       <p className=" ml-0 mb-0 mt-0 pl-1 prodprice" >₹198</p>
+                      <div style={rowpad1}>
+                        <div className="float-left">
+                         
+                        <p className=" ml-0 mb-0 mt-0 pl-0 prodprice " >₹198</p>
+                        </div>
                      
-                       
-                
-                       </MDBCol>
-                     <MDBCol style={{marginRight:'-2rem'}}> 
                      
-                      <MDBBtn color="addbtn"  className=" px-2 py-1 ml-0 mt-0 mr-1 addbtn" rounded >Add</MDBBtn></MDBCol>
+                       <div className="float-right">
+
+                       <div className="pmclass " style={{display:'none'}} id="hproductadd">
+                       <div className="mclass" onClick={this.decrease}>
+                       -
+                         </div>
+                         <div className="nclass">
+{this.state.value}
+                         </div>
+                         <div className="pclass" onClick={this.increase}>
+                        +
+
+                         </div>
+            </div>
+                      <MDBBtn color="addbtn"  id="haddbtn" className=" px-2 py-0 ml-0 mt-0 mr-1 addbtn " rounded>Add</MDBBtn>
               
-             </MDBRow>
+
+                       </div>
+                
+                      
+                    
+                      </div>
+  
+                     
+            
             </MDBCard>
          
           
           </MDBCol>
-        
-          <MDBCol lg="2" md="4" sm="6" className="px-1 pb-3">
-        <MDBCard style={shadow} className="ml-1 mr-1 mb-1 pr-2 pl-2 border border-gray cardradius h-100" >
+       
+          <MDBCol lg="2" md="4" sm="6"  className="px-1 pb-3" >
+      <MDBCard style={shadow} className="ml-1 mr-1 mb-1 pr-1 pl-1 border border-gray cardradius h-100" >
      
         <MDBRow style={rowpad} >
-              <img className="mx-auto my-2" src={zandu} style={{height:110,width:80}} alt="zandu"></img>
+            
+                 <img className="mx-auto my-2" src={sugarfree} style={{height:110,width:80}} alt="zandu"></img>
               </MDBRow>
-                
+              
+  <MDBBadge color="danger" className="align-items-center" style={stylebadge}>10% off</MDBBadge>
+                 
                      <MDBRow 
-  style={rowpad}><p className="producthead contentoverflow">Zandu Kesari Jeevan Fit for Diabetics</p></MDBRow>
-                     <MDBRow style={rowpad}><p className="text-center proddescribe contentoverflow">bottle of 90 tablets</p></MDBRow>
+  style={rowpad}><p className="producthead contentoverflow pl-2 pr-2">Sugar free Natural Powder</p></MDBRow>
+                     <MDBRow style={rowpad1}><p className="text-left proddescribe contentoverflow pl-2 pr-2">Liquid</p></MDBRow>
                  
             
-                     <MDBRow style={rowpad}>
+                    
                         
-                       <MDBCol style={{marginLeft:'-1.2rem'}}>
-  
-                       <p className=" ml-0 mb-0 mt-0 pl-1 prodprice" >₹198</p>
+                      <div style={rowpad1}>
+                        <div className="float-left">
+                         
+                        <p className=" ml-0 mb-0 mt-0 pl-0 prodprice " >₹98</p>
+                        </div>
                      
-                       
-                
-                       </MDBCol>
-                     <MDBCol style={{marginRight:'-2rem'}}> 
                      
-                      <MDBBtn color="addbtn"  className=" px-2 py-1 ml-0 mt-0 mr-1 addbtn" rounded >Add</MDBBtn></MDBCol>
+                       <div className="float-right">
+
+                       <div className="pmclass " style={{display:'none'}} id="hproductadd">
+                       <div className="mclass" onClick={this.decrease}>
+                       -
+                         </div>
+                         <div className="nclass">
+{this.state.value}
+                         </div>
+                         <div className="pclass" onClick={this.increase}>
+                        +
+
+                         </div>
+            </div>
+                      <MDBBtn color="addbtn"  id="haddbtn" className=" px-2 py-0 ml-0 mt-0 mr-1 addbtn " rounded>Add</MDBBtn>
               
-             </MDBRow>
+
+                       </div>
+                
+                      
+                    
+                      </div>
+  
+                     
+            
             </MDBCard>
          
           
           </MDBCol>
-        
-          <MDBCol lg="2" md="4" sm="6" className="px-1 pb-3" >
-        <MDBCard style={shadow} className="ml-1 mr-1 mb-1 pr-2 pl-2 border border-gray cardradius h-100" >
-     
-        <MDBRow style={rowpad} >
-               <img className="mx-auto my-2" src={sugarfree} style={{height:110,width:80}} alt="zandu"></img>
-              </MDBRow>
-                
-                     <MDBRow 
-  style={rowpad}><p className="producthead  contentoverflow">Sugar free Natural Powder</p></MDBRow>
-                     <MDBRow style={rowpad}><p className="text-center proddescribe contentoverflow">Liquid</p></MDBRow>
-                 
-            
-                     <MDBRow style={rowpad}>
-                        
-                       <MDBCol style={{marginLeft:'-1.2rem'}}>
-  
-                       <p className=" ml-0 mb-0 mt-0 pl-1 prodprice" >₹198</p>
-                     
-                       
-                
-                       </MDBCol>
-                     <MDBCol style={{marginRight:'-2rem'}}> 
-                     
-                      <MDBBtn color="addbtn"  className=" px-2 py-1 ml-0 mt-0 mr-1 addbtn" rounded >Add</MDBBtn></MDBCol>
-              
-             </MDBRow>
-            </MDBCard>
-         
-          
-          </MDBCol>
-        
+       
+       
        
         </MDBRow>
-     
-        </section>
-  );
+       
+         
+     </section>
+    );
+  }
+  
 }
 
 export default Health;

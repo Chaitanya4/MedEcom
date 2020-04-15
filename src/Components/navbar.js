@@ -28,12 +28,24 @@ const incswidth={
 const shadow={
   boxShadow:'none'
 }
+const stext={
+  textTransform:'capitalize'
+}
 const shadow1={
   boxShadow:'0 0 10px #45a3c8'
 }
 const buttonborder={
   border:'0.1rem solid #33b5e5',
   color:'#33b5e5'
+}
+const bgcolor={
+  backgroundColor:'#fff0'
+}
+const inborder={
+  border:'1px solid rgb(189, 198, 200)'
+}
+const bnone={
+  borderBottom:'none'
 }
 class Navbar extends Component {
 state = {
@@ -62,13 +74,13 @@ render() {
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav left>
             <MDBNavItem active>
-              <MDBNavLink to="#!"><MDBBtn rounded color="white btn-sm border_radious_20" className="text-blue" style={{...shadow,...buttonborder}}><b>MEDICINE</b></MDBBtn></MDBNavLink>
+              <MDBNavLink to="#!"><MDBBtn rounded color="info btn-sm border_radious_20"   style={shadow}><b>MEDICINE</b></MDBBtn></MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/ConsultDoctor"><MDBBtn rounded color="info btn-sm border_radious_20" style={shadow1} onClick={event =>  window.location.href='/ConsultDoctor'}><b>CONSULT A DOCTOR</b></MDBBtn></MDBNavLink>
+              <MDBNavLink to="/ConsultDoctor"><MDBBtn rounded color="info btn-sm border_radious_20"  onClick={event =>  window.location.href='/ConsultDoctor'}><b>CONSULT A DOCTOR</b></MDBBtn></MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="#!"><MDBBtn rounded color="white btn-sm border_radious_20" className="text-blue" style={{...shadow,...buttonborder}}><b>BOOK APPOINTMENT</b></MDBBtn></MDBNavLink>
+              <MDBNavLink to="#!"><MDBBtn rounded color="info btn-sm border_radious_20"  style={shadow}><b>BOOK APPOINTMENT</b></MDBBtn></MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               
@@ -83,40 +95,40 @@ render() {
               
             </MDBNavItem>
             <MDBNavItem>
-            <MDBBtn outline color="dark btn-md btn-head" style={shadow} onClick={event =>  window.location.href='/LoginPage'}>Login</MDBBtn>
+            <MDBBtn outline color="dark btn-md btn-head" style={{...shadow,...stext}} onClick={event =>  window.location.href='/LoginPage'}>Login</MDBBtn>
             </MDBNavItem>
             <MDBNavItem>
-            <MDBBtn outline color="dark btn-md btn-head" style={shadow} onClick={event =>  window.location.href='/RegisterPage'}>Register</MDBBtn>
+            <MDBBtn outline color="dark btn-md btn-head" style={{...shadow,...stext}} onClick={event =>  window.location.href='/RegisterPage'}>Register</MDBBtn>
             </MDBNavItem>
            
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>
       
-      <hr/>
+      <hr style={{marginTop:0,marginBottom:0}}/>
       
    
       <MDBRow style={rowpad} >
         <MDBCol lg="4" md="6" sm="12" xs="12">
-      <div className="input-group md-form form-sm form-1 pl-0 bg-gray">
+      <div className="input-group md-form form-sm form-1 pl-0 " style={{...bgcolor,...inborder}}>
         <div className="input-group-prepend">
-          <span className="input-group-text  lighten-3" id="basic-text1">
-            <MDBIcon className="text-gray" icon="search" />
+          <span className="input-group-text" id="basic-text1" style={bgcolor}>
+            <MDBIcon className="text-gray" icon="map-marker-alt" />
           </span>
         </div>
-        <input className="form-control my-0 font1 fontsize1" type="text" placeholder="Enter Delivery Location" background="gray" aria-label="Search" />
+        <input className="form-control my-0 font1 fontsize1" type="text" placeholder="Enter Delivery Location" style={{...bgcolor,...bnone}} aria-label="Search" />
       </div>
 
 </MDBCol>
 
 <MDBCol lg="4" md="6" sm="12" xs="12">
-      <div className="input-group md-form form-sm form-1 pl-0 bg-gray">
+      <div className="input-group md-form form-sm form-1 pl-0"  style={{...bgcolor,...inborder}}>
         <div className="input-group-prepend">
-          <span className="input-group-text  lighten-3" id="basic-text1">
-            <MDBIcon className="text-gray" icon="map-marker-alt" />
+          <span className="input-group-text  lighten-3" id="basic-text1" style={bgcolor}>
+            <MDBIcon className="text-gray" icon="search" />
           </span>
         </div>
-        <input className="form-control my-0 font1 fontsize1" type="text" placeholder="Search Medicine" background="gray" aria-label="Search" />
+        <input className="form-control my-0 font1 fontsize1" type="text" placeholder="Search Medicine"  style={{...bgcolor,...bnone}} aria-label="Search" />
       </div>
 
 </MDBCol>
@@ -127,7 +139,7 @@ render() {
     
 
    
-    <MDBBtn color="info mt-4 btn btn-md float-lg-right float-xl-right font1 fontsize1"><b>Upload Prescription</b></MDBBtn> 
+    <MDBBtn color="info mt-4 btn btn-md float-lg-right float-xl-right font1 fontsize1" style={{textTransform:'capitalize'}}><b>Upload Prescription</b></MDBBtn> 
     
    
        

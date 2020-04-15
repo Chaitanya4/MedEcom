@@ -31,7 +31,7 @@ const hcolor={
 }
 const sidebox={
  
-  borderRadius:'0.25rem'
+  borderRadius:'0.16rem'
 }
 const scrollsidebar={
   height: '12rem',

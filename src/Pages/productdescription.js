@@ -5,22 +5,21 @@ import NavBar from '../Components/navbar';
 //import ButtonPage from './Components/demo';\
 import SimilarProducts from '../Components/similarproducts';
 import Footer1 from '../Components/footer1';
-import CustomerFeedback from '../Components/customerfeedback';
-import ProductDescribe from '../Components/productdescribe';
-import ProductDetails from '../Components/productdetails';
-
+import DetailProducts from '../Components/detailproduct.js'
+import DescribeProduct from '../Components/describeproduct.js';
+import FreqCust from '../Components/fbtproduct.js';
 import '../App.css';
 
 
 function ProductDescription() {
   return (
-    <div >
+    <div className="App">
       <NavBar/>
-     <ProductDescribe/>
-     <ProductDetails/>
-     <SimilarProducts/>
-      <CustomerFeedback/>
-    
+   
+    <DescribeProduct/>
+<DetailProducts/>
+<FreqCust/>      
+      <SimilarProducts/>
       <Footer1/>
       <Footer/>
     </div>

@@ -3,7 +3,7 @@ import { MDBListGroup, MDBListGroupItem, MDBContainer, MDBRow, MDBCol } from "md
 
 const CustomerFeedback= () => {
 return (
-<MDBContainer className="mb-4">
+
   <MDBListGroup style={{ width: "100%" }}>
     <MDBListGroupItem><h6 style={{color:"blue"}}>Customer Feedback</h6>
     <MDBRow>
@@ -62,7 +62,7 @@ return (
     </MDBRow>
     </MDBListGroupItem>
   </MDBListGroup>
-</MDBContainer>
+
 
 );
 };

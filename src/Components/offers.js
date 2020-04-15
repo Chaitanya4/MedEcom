@@ -37,7 +37,7 @@ const Offer = () => {
               <MDBCard style={{margin:'auto',width:'60%' }}> 
                 <MDBCardBody className="text-center">
                   <MDBCardTitle><h4  className="text-center text-danger ">04:00:10</h4></MDBCardTitle>
-                  <MDBBtn color='light-blue' className="btn-info w-75 fbshrink order-btn">Order Now</MDBBtn>
+                  <MDBBtn color='info' className="btn-info w-75 fbshrink order-btn">Order Now</MDBBtn>
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>

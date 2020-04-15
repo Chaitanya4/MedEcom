@@ -16,7 +16,7 @@ var bstyle={
 var cdstyle={border:"dotted 1px green"};
 const ProductDescribe = () => {
   return (
-    <MDBContainer>
+   
 <MDBRow >
 <MDBCol lg="4" md="12" sm="12" className="mb-lg-0 mb-4">
   <MDBCard className="h-100  mt-4  ml-1 " style={{boxShadow:"none",border:"none"}} >
@@ -78,7 +78,7 @@ const ProductDescribe = () => {
   </MDBCard>
 </MDBCol>
 </MDBRow>
-</MDBContainer>
+
   );
 }
 
