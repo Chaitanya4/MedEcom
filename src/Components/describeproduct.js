@@ -56,7 +56,7 @@ const DescribeProduct = () => {
           </MDBRow>
          
 <MDBRow className="ml-0 mr-0 mt-0">
-<MDBCol lg="4" md="12" sm="12" className="mb-lg-0 mb-4">
+<MDBCol lg="3" md="12" sm="12" className="mb-lg-0 mb-4">
   <MDBCard className="h-100  mt-4  ml-1 " style={{boxShadow:"none",border:"none"}} >
     
     <MDBRow className="h-85 border gray mb-1 " style={{...bstyle,...borderradius}}><img className="mx-auto" src={daburch} alt="dabur" style={{width:'100%'}} /></MDBRow>
@@ -68,7 +68,7 @@ const DescribeProduct = () => {
     </MDBRow>
   </MDBCard>
 </MDBCol>
-<MDBCol lg="5" md="7" sm="12" className="mb-lg-0 mb-4">
+<MDBCol lg="6" md="7" sm="12" className="mb-lg-0 mb-4">
 <MDBCard className="h-100 border gray mt-4 ml-1">
   <MDBRow className="h-85 ml-1 mt-1">
   
@@ -82,11 +82,12 @@ const DescribeProduct = () => {
  
   <MDBCol  lg="12" md="12" sm="12" xs="12"> <p  style={{fontSize:12,fontWeight:500 }} className="text-left pb-0 mb-0 text-primary">Quantity Available</p></MDBCol>
   <MDBCol  lg="9" md="9" sm="8" xs="8" className="justify-content-start d-flex align-items-center w-65"><p><MDBBtn color="info btn-sm px-2 py-2 ml-0 float-right" style={{boxShadow:'none',fontSize:14,textTransform:'lowercase'}} >900gm</MDBBtn></p> 
-  <p className="mr-0 mr-md-2">
+  <p className="mr-0 mr-md-2 mt-2">
       <span className="text-left grey-text" style={{fontSize:'14px'}}><b>MRP</b>
-       <span style={{textDecoration:'line-through'}}><b>900</b></span></span>
+       <span style={{textDecoration:'line-through'}}><b>900</b></span>
+       <div> <p className="mr-0 mr-md-4" style={{color:'black',fontSize:16}}>₹ 878</p></div></span>
        </p>
-       <p className="mr-0 mr-md-4"><span style={{color:'black'}}>₹ 878</span></p>
+      
            
             <p >
             <MDBBadge color="danger" className="mr-0 mr-md-2" style={{...shadow,...reviewradius}}>5% OFF</MDBBadge>
@@ -98,12 +99,11 @@ const DescribeProduct = () => {
             
     
              <MDBCol  lg="9" md="9" sm="8" xs="8" className="justify-content-start d-flex align-items-center w-65"><p><MDBBtn color="info btn-sm px-2 py-2 ml-0 float-right" style={{boxShadow:'none',fontSize:14,textTransform:'lowercase'}} >500gm</MDBBtn></p> 
-  <p className="mr-0 mr-md-2">
+             <p className="mr-0 mr-md-2 mt-2">
       <span className="text-left grey-text" style={{fontSize:'14px'}}><b>MRP</b>
-       <span style={{textDecoration:'line-through'}}><b>288</b></span></span>
+       <span style={{textDecoration:'line-through'}}><b>270</b></span>
+       <div> <p className="mr-0 mr-md-4" style={{color:'black',fontSize:16}}>₹ 250</p></div></span>
        </p>
-       <p className="mr-0 mr-md-4"><span style={{color:'black'}}>₹ 250</span></p>
-           
             <p >
             <MDBBadge color="danger" className="mr-0 mr-md-2" style={{...shadow,...reviewradius}}>10% OFF</MDBBadge>
            

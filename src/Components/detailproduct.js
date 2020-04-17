@@ -66,7 +66,66 @@ class DetailProducts extends Component{
           </MDBNavItem>
         </MDBNav>
         <MDBTabContent activeItem={this.state.activeItem} style={tabheight} className="pr-3">
-          <MDBTabPane tabId="1" role="tabpanel">
+        <MDBTabPane tabId="1" role="tabpanel">
+              <MDBRow >
+              <p className="mt-2 grey-text pdescribe text-left pl-4">
+           <b> Dabur Chyawanprash is an ayurvedic health supplement comprising 41 Ayurvedic herbs that boost the immunity. </b>
+            </p>
+              </MDBRow>
+         
+            <div  className="rightslantdiv pl-2 mt-3">
+               <b> Benefits</b>
+            </div>
+            <MDBRow className="p-0 pt-1 mt-5">
+                <ul>
+                    <li>
+<p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement rich in antioxidants and Vitamin C</b></p>
+                    </li>
+                    <li>
+<p className=" grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement</b> </p>
+                    </li>
+                    <li>
+<p className=" grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement</b> </p>
+                    </li>
+                    <li>
+<p className=" grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement</b> </p>
+                    </li>
+                    <li>
+<p className=" grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement</b> </p>
+                    </li>
+                </ul>
+            </MDBRow>
+            <div className="rightslantdiv pl-2 mt-3">
+               <b> How to Use</b>
+            </div>
+            <MDBRow className="p-0 pt-1 mt-5">
+                <ul>
+                    <li>
+<p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement rich in antioxidants and Vitamin C</b></p>
+                    </li>
+                    <li>
+<p className=" grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement</b> </p>
+                    </li>
+                </ul>
+            </MDBRow>
+            
+            <div className="rightslantdiv pl-2 mt-3">
+              <b>Ingredients</b> 
+            </div>
+            <MDBRow className="p-0 pt-1 mt-5">
+                <ul>
+                    <li>
+<p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement rich in antioxidants and Vitamin C</b></p>
+                    </li>
+                    <li>
+<p className=" grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement</b> </p>
+                    </li>
+                </ul>
+            </MDBRow>
+           
+           
+          </MDBTabPane>
+          <MDBTabPane tabId="2" role="tabpanel">
               <MDBRow >
               <p className="mt-2 grey-text pdescribe text-left pl-4">
            <b> Dabur Chyawanprash is an ayurvedic health supplement comprising 41 Ayurvedic herbs that boost the immunity. </b>
@@ -127,79 +186,17 @@ class DetailProducts extends Component{
             </MDBRow>
            
           </MDBTabPane>
-          <MDBTabPane tabId="2" role="tabpanel">
-          <MDBRow >
-              <p className="mt-2 grey-text pdescribe text-left pl-4">
-           <b> Dabur Chyawanprash is an ayurvedic health supplement comprising 41 Ayurvedic herbs that boost the immunity. </b>
-            </p>
-              </MDBRow>
-         
-            <div  className="rightslantdiv pl-2">
-               <b> Ingredients</b>
-            </div>
-            <MDBRow className="p-0 pt-1 mt-4">
-                <ul>
-                    <li>
-<p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement rich in antioxidants and Vitamin C</b></p>
-                    </li>
-                    <li>
-<p className=" grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement</b> </p>
-                    </li>
-                </ul>
-            </MDBRow>
-            <div className="rightslantdiv pl-2">
-               <b> How to Use</b>
-            </div>
-            <MDBRow className="p-0 pt-1 mt-4">
-                <ul>
-                    <li>
-<p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement rich in antioxidants and Vitamin C</b></p>
-                    </li>
-                    <li>
-<p className=" grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement</b> </p>
-                    </li>
-                </ul>
-            </MDBRow>
-            
-            <div className="rightslantdiv pl-2">
-              <b>Storage Information</b> 
-            </div>
-            <MDBRow className="p-0 pt-1 mt-4">
-                <ul>
-                    <li>
-<p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement rich in antioxidants and Vitamin C</b></p>
-                    </li>
-                    <li>
-<p className=" grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement</b> </p>
-                    </li>
-                </ul>
-            </MDBRow>
-           
-            <div className="rightslantdiv pl-2">
-              <b>Safety Information</b> 
-            </div>
-            <MDBRow className="p-0 pt-1 mt-4">
-                <ul>
-                    <li>
-<p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>Boost immunity</b></p>
-                    </li>
-                  
-                </ul>
-            </MDBRow>
-           
-           
-          </MDBTabPane>
           <MDBTabPane tabId="3" role="tabpanel">
-          <MDBRow >
+              <MDBRow >
               <p className="mt-2 grey-text pdescribe text-left pl-4">
            <b> Dabur Chyawanprash is an ayurvedic health supplement comprising 41 Ayurvedic herbs that boost the immunity. </b>
             </p>
               </MDBRow>
          
-            <div  className="rightslantdiv pl-2">
+            <div  className="rightslantdiv pl-2 mt-3">
                <b> Ingredients</b>
             </div>
-            <MDBRow className="p-0 pt-1 mt-4">
+            <MDBRow className="p-0 pt-1 mt-5">
                 <ul>
                     <li>
 <p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement rich in antioxidants and Vitamin C</b></p>
@@ -209,10 +206,10 @@ class DetailProducts extends Component{
                     </li>
                 </ul>
             </MDBRow>
-            <div className="rightslantdiv pl-2">
+            <div className="rightslantdiv pl-2 mt-3">
                <b> How to Use</b>
             </div>
-            <MDBRow className="p-0 pt-1 mt-4">
+            <MDBRow className="p-0 pt-1 mt-5">
                 <ul>
                     <li>
 <p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement rich in antioxidants and Vitamin C</b></p>
@@ -223,10 +220,10 @@ class DetailProducts extends Component{
                 </ul>
             </MDBRow>
             
-            <div className="rightslantdiv pl-2">
+            <div className="rightslantdiv pl-2 mt-3">
               <b>Storage Information</b> 
             </div>
-            <MDBRow className="p-0 pt-1 mt-4">
+            <MDBRow className="p-0 pt-1 mt-5">
                 <ul>
                     <li>
 <p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement rich in antioxidants and Vitamin C</b></p>
@@ -237,10 +234,10 @@ class DetailProducts extends Component{
                 </ul>
             </MDBRow>
            
-            <div className="rightslantdiv pl-2">
+            <div className="rightslantdiv pl-2 mt-3">
               <b>Safety Information</b> 
             </div>
-            <MDBRow className="p-0 pt-1 mt-4">
+            <MDBRow className="p-0 pt-1 mt-5">
                 <ul>
                     <li>
 <p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>Boost immunity</b></p>
@@ -249,22 +246,18 @@ class DetailProducts extends Component{
                 </ul>
             </MDBRow>
            
-          
-            
-            
-            
           </MDBTabPane>
           <MDBTabPane tabId="4" role="tabpanel">
-          <MDBRow >
+              <MDBRow >
               <p className="mt-2 grey-text pdescribe text-left pl-4">
            <b> Dabur Chyawanprash is an ayurvedic health supplement comprising 41 Ayurvedic herbs that boost the immunity. </b>
             </p>
               </MDBRow>
          
-            <div  className="rightslantdiv pl-2">
+            <div  className="rightslantdiv pl-2 mt-3">
                <b> Ingredients</b>
             </div>
-            <MDBRow className="p-0 pt-1 mt-4">
+            <MDBRow className="p-0 pt-1 mt-5">
                 <ul>
                     <li>
 <p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement rich in antioxidants and Vitamin C</b></p>
@@ -274,10 +267,10 @@ class DetailProducts extends Component{
                     </li>
                 </ul>
             </MDBRow>
-            <div className="rightslantdiv pl-2">
+            <div className="rightslantdiv pl-2 mt-3">
                <b> How to Use</b>
             </div>
-            <MDBRow className="p-0 pt-1 mt-4">
+            <MDBRow className="p-0 pt-1 mt-5">
                 <ul>
                     <li>
 <p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement rich in antioxidants and Vitamin C</b></p>
@@ -288,10 +281,10 @@ class DetailProducts extends Component{
                 </ul>
             </MDBRow>
             
-            <div className="rightslantdiv pl-2">
+            <div className="rightslantdiv pl-2 mt-3">
               <b>Storage Information</b> 
             </div>
-            <MDBRow className="p-0 pt-1 mt-4">
+            <MDBRow className="p-0 pt-1 mt-5">
                 <ul>
                     <li>
 <p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement rich in antioxidants and Vitamin C</b></p>
@@ -302,10 +295,10 @@ class DetailProducts extends Component{
                 </ul>
             </MDBRow>
            
-            <div className="rightslantdiv pl-2">
+            <div className="rightslantdiv pl-2 mt-3">
               <b>Safety Information</b> 
             </div>
-            <MDBRow className="p-0 pt-1 mt-4">
+            <MDBRow className="p-0 pt-1 mt-5">
                 <ul>
                     <li>
 <p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>Boost immunity</b></p>
@@ -316,16 +309,16 @@ class DetailProducts extends Component{
            
           </MDBTabPane>
           <MDBTabPane tabId="5" role="tabpanel">
-          <MDBRow >
+              <MDBRow >
               <p className="mt-2 grey-text pdescribe text-left pl-4">
            <b> Dabur Chyawanprash is an ayurvedic health supplement comprising 41 Ayurvedic herbs that boost the immunity. </b>
             </p>
               </MDBRow>
          
-            <div  className="rightslantdiv pl-2">
+            <div  className="rightslantdiv pl-2 mt-3">
                <b> Ingredients</b>
             </div>
-            <MDBRow className="p-0 pt-1 mt-4">
+            <MDBRow className="p-0 pt-1 mt-5">
                 <ul>
                     <li>
 <p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement rich in antioxidants and Vitamin C</b></p>
@@ -335,10 +328,10 @@ class DetailProducts extends Component{
                     </li>
                 </ul>
             </MDBRow>
-            <div className="rightslantdiv pl-2">
+            <div className="rightslantdiv pl-2 mt-3">
                <b> How to Use</b>
             </div>
-            <MDBRow className="p-0 pt-1 mt-4">
+            <MDBRow className="p-0 pt-1 mt-5">
                 <ul>
                     <li>
 <p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement rich in antioxidants and Vitamin C</b></p>
@@ -349,10 +342,10 @@ class DetailProducts extends Component{
                 </ul>
             </MDBRow>
             
-            <div className="rightslantdiv pl-2">
+            <div className="rightslantdiv pl-2 mt-3">
               <b>Storage Information</b> 
             </div>
-            <MDBRow className="p-0 pt-1 mt-4">
+            <MDBRow className="p-0 pt-1 mt-5">
                 <ul>
                     <li>
 <p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement rich in antioxidants and Vitamin C</b></p>
@@ -363,10 +356,10 @@ class DetailProducts extends Component{
                 </ul>
             </MDBRow>
            
-            <div className="rightslantdiv pl-2">
+            <div className="rightslantdiv pl-2 mt-3">
               <b>Safety Information</b> 
             </div>
-            <MDBRow className="p-0 pt-1 mt-4">
+            <MDBRow className="p-0 pt-1 mt-5">
                 <ul>
                     <li>
 <p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>Boost immunity</b></p>
@@ -377,16 +370,16 @@ class DetailProducts extends Component{
            
           </MDBTabPane>
           <MDBTabPane tabId="6" role="tabpanel">
-          <MDBRow >
+              <MDBRow >
               <p className="mt-2 grey-text pdescribe text-left pl-4">
            <b> Dabur Chyawanprash is an ayurvedic health supplement comprising 41 Ayurvedic herbs that boost the immunity. </b>
             </p>
               </MDBRow>
          
-            <div  className="rightslantdiv pl-2">
+            <div  className="rightslantdiv pl-2 mt-3">
                <b> Ingredients</b>
             </div>
-            <MDBRow className="p-0 pt-1 mt-4">
+            <MDBRow className="p-0 pt-1 mt-5">
                 <ul>
                     <li>
 <p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement rich in antioxidants and Vitamin C</b></p>
@@ -396,10 +389,10 @@ class DetailProducts extends Component{
                     </li>
                 </ul>
             </MDBRow>
-            <div className="rightslantdiv pl-2">
+            <div className="rightslantdiv pl-2 mt-3">
                <b> How to Use</b>
             </div>
-            <MDBRow className="p-0 pt-1 mt-4">
+            <MDBRow className="p-0 pt-1 mt-5">
                 <ul>
                     <li>
 <p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement rich in antioxidants and Vitamin C</b></p>
@@ -410,10 +403,10 @@ class DetailProducts extends Component{
                 </ul>
             </MDBRow>
             
-            <div className="rightslantdiv pl-2">
+            <div className="rightslantdiv pl-2 mt-3">
               <b>Storage Information</b> 
             </div>
-            <MDBRow className="p-0 pt-1 mt-4">
+            <MDBRow className="p-0 pt-1 mt-5">
                 <ul>
                     <li>
 <p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>An ayurvedic nutritional supplement rich in antioxidants and Vitamin C</b></p>
@@ -424,10 +417,10 @@ class DetailProducts extends Component{
                 </ul>
             </MDBRow>
            
-            <div className="rightslantdiv pl-2">
+            <div className="rightslantdiv pl-2 mt-3">
               <b>Safety Information</b> 
             </div>
-            <MDBRow className="p-0 pt-1 mt-4">
+            <MDBRow className="p-0 pt-1 mt-5">
                 <ul>
                     <li>
 <p className="grey-text pdescribe text-left pl-2 py-1 my-0"><b>Boost immunity</b></p>
@@ -436,9 +429,8 @@ class DetailProducts extends Component{
                 </ul>
             </MDBRow>
            
-           
           </MDBTabPane>
-        </MDBTabContent>
+          </MDBTabContent>
      
           </MDBCol>
           <MDBCol lg="3" md="12" sm="12">

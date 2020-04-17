@@ -10,6 +10,8 @@ import {
 import homeComponent from './Pages/home';
 import ConsultDoctor from './Pages/consultadoctor';
 import ProductDescription from './Pages/productdescription';
+import ProductDescription1 from './Pages/productdescription1';
+import ProductDescription2 from './Pages/productdescription2';
 import ProductListing from './Pages/productlisting';
 import ProductListing1 from './Pages/productlisting1';
 import LoginPage from './Pages/login';
@@ -28,6 +30,8 @@ function App() {
         <Route path="/home" component={homeComponent} /> 
         <Route path="/ConsultDoctor" component={ConsultDoctor} /> 
         <Route path="/ProductDescription" component={ProductDescription} /> 
+        <Route path="/ProductDescription1" component={ProductDescription1} /> 
+        <Route path="/ProductDescription2" component={ProductDescription2} /> 
         <Route path="/ProductListing" component={ProductListing} /> 
         <Route path="/ProductListing1" component={ProductListing1} /> 
         <Route path="/LoginPage" component={LoginPage} /> 
