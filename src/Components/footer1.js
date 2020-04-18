@@ -34,7 +34,7 @@ const Footer1 = () => {
             />
             <MDBCardBody className="text-center ">
             <h3 className=" ftcardheading">Reliable</h3>
-             <p className="pl-3 pr-3  ftcardtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper fringilla egestas. Morbi convallis sodales metus</p>
+             <p className="pl-3 pr-3  ftcardtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper fringilla egestas. Morbi convallis sodales metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -48,7 +48,7 @@ const Footer1 = () => {
             />
             <MDBCardBody className="text-center">
             <h3  className="  ftcardheading">Secure</h3>
-             <p className="pl-3 pr-3   ftcardtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper fringilla egestas. Morbi convallis sodales metus</p>
+             <p className="pl-3 pr-3   ftcardtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper fringilla egestas. Morbi convallis sodales metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -62,7 +62,7 @@ const Footer1 = () => {
             />
             <MDBCardBody className="text-center">
             <h3  className="  ftcardheading">Affordable</h3>
-             <p className="pl-3 pr-3   ftcardtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper fringilla egestas. Morbi convallis sodales metus</p>
+             <p className="pl-3 pr-3   ftcardtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper fringilla egestas. Morbi convallis sodales metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>

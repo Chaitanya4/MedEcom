@@ -3,11 +3,11 @@ import React from 'react';
 import Footer from '../Components/footer';
 import NavBar from '../Components/navbar';
 //import ButtonPage from './Components/demo';\
-import SimilarProducts from '../Components/similarproducts';
+import AlternateProducts from '../Components/alternateproducts';
 import Footer1 from '../Components/footer1';
-import DetailProducts from '../Components/detailproduct.js'
-import DescribeProduct from '../Components/describeproduct.js';
-import FreqCust from '../Components/fbtproduct.js';
+import DetailProducts2 from '../Components/detailproduct2.js'
+import DescribeProduct2 from '../Components/describeproduct2.js';
+import FreqCust1 from '../Components/fbtproduct1.js';
 import '../App.css';
 
 
@@ -16,10 +16,10 @@ function ProductDescription2() {
     <div className="App">
       <NavBar/>
    
-    <DescribeProduct/>
-<DetailProducts/>
-<FreqCust/>      
-      <SimilarProducts/>
+    <DescribeProduct2/>
+<DetailProducts2/>
+<FreqCust1/>      
+      <AlternateProducts/>
       <Footer1/>
       <Footer/>
     </div>

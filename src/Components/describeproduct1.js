@@ -79,18 +79,18 @@ class DescribeProduct1 extends React.Component{
                
       <MDBRow className="ml-0 mr-0 mt-0">
       <MDBCol lg="3" md="12" sm="12" className="mb-lg-0 mb-4">
-        <MDBCard className="h-100 border gray mt-4  ml-1 " style={{boxShadow:"none",border:"none"}} >
-          
-         <img className="mx-auto" src={daburch} style={ {width:'100%',  height:'100%'}  } alt="dabur" />
-         
-        </MDBCard>
-      </MDBCol>
+      <MDBCard className="h-100 border gray  mt-4  ml-1 " style={{boxShadow:"none",border:"none"}} >
+    
+   <img className="mx-auto" src={daburch} alt="dabur" style={{width:'100%',height:'100%'}} />
+    
+  </MDBCard>
+ </MDBCol>
       <MDBCol lg="6" md="7" sm="12" className="mb-lg-0 mb-4">
       <MDBCard className="h-100 border gray mt-4 ml-1">
         <MDBRow className="h-80 ml-1 mt-1">
         
-        <MDBCol  lg="12" md="12" sm="12" xs="12"> <p  style={{fontSize:26,fontWeight:500 }} className="text-left pb-0 mb-0">SBL Arsenic Album Dilution 50M CH <MDBBadge color="success" className="mr-2 float-right mt-1" style={{...shadow,...reviewradius,...fs}}>4.4 <MDBIcon icon="star" /></MDBBadge></p></MDBCol>
-        <MDBCol  lg="12" md="12" sm="12" xs="12"><p className="grey-text text-left" style={{fontSize:12}}><i class="fas fa-clock amber-text mr-1" ></i>03:02 PM,15 Jan 2020</p></MDBCol>
+        <MDBCol  lg="12" md="12" sm="12" xs="12"> <p  style={{fontSize:26,fontWeight:500 }} className="text-left pb-0 mb-2">SBL Arsenic Album Dilution 50M CH <MDBBadge color="success" className="mr-2 float-right mt-1" style={{...shadow,...reviewradius,...fs}}>4.4 <MDBIcon icon="star" /></MDBBadge></p></MDBCol>
+        <MDBCol  lg="12" md="12" sm="12" xs="12"><p className="grey-text text-left mb-1" style={{fontSize:12}}><i class="fas fa-clock amber-text mr-1" ></i>03:02 PM,15 Jan 2020</p></MDBCol>
         <MDBCol  lg="12" md="12" sm="12" xs="12" className="d-flex justify-flex-start"><span className="text-left mr-1" style={{fontSize:12}}><b>Manufacturer:</b></span><span className="text-primary text-left" style={{fontSize:12,textDecoration:'underline'}}>Dabur India Ltd</span></MDBCol>
         <MDBCol  lg="12" md="12" sm="12" xs="12" className="d-flex justify-flex-start"><span className="text-left mr-1" style={{fontSize:12}}><b>Expiry Date:</b></span><span className="grey-text text-left" style={{fontSize:12}}>04 April 2020</span></MDBCol>
          
@@ -155,7 +155,7 @@ class DescribeProduct1 extends React.Component{
          <MDBRow className="h-20 border-top align-content-center gray ml-1 mr-0">
          <MDBCol  lg="12" md="12" sm="12" xs="12"> <p  style={{fontSize:12,fontWeight:500 }} className="text-left pb-0 mb-0 text-primary">Total</p></MDBCol>
          <MDBCol lg="7" md="7" sm="7" xs="7"  className=" pr-0 align-content-center w-50" style={{display:'grid',justifyContent:'flex-start'}}>
-                  <h6  ><b style={{color:"black",fontSize:26}}>₹ 405</b> <div style={{color:'#09ea09',fontSize:12,fontWeight:500}}>Get 10% off</div></h6>
+                  <h6  className="text-left" ><b style={{color:"black",fontSize:26}}>₹ 405</b> <div style={{color:'#09ea09',fontSize:12,fontWeight:500}}>Get 10% off</div></h6>
                  
                   </MDBCol>
           <MDBCol lg="5" md="5" sm="5" xs="5" className=" align-content-center w-50" style={{display:'grid',justifyContent:'flex-end'}} >
@@ -217,7 +217,7 @@ class DescribeProduct1 extends React.Component{
           <MDBRow className="border-top gray ml-0 mr-0 align-content-center" style={{width:'100%'}}>
          <MDBCol  lg="12" md="12" sm="12" xs="12"> <p  style={{fontSize:12,fontWeight:500 }} className="text-left pb-0 mb-0 text-primary">Total</p></MDBCol>
          <MDBCol lg="7" md="7" sm="7" xs="7"  className=" pr-0 align-content-center w-50" style={{display:'grid',justifyContent:'flex-start'}}>
-                  <h6 style={{color:"black",fontSize:26}} ><b>₹ 405</b></h6></MDBCol>
+                  <h6  className="text-left" style={{color:"black",fontSize:26}} ><b>₹ 405</b></h6></MDBCol>
           <MDBCol lg="5" md="5" sm="5" xs="5" className=" align-content-center w-50" style={{display:'grid',justifyContent:'flex-end'}} >
           <MDBBtn color="info btn-sm px-2 py-2 ml-0 float-right" style={{boxShadow:'none',fontSize:14}} >ADD TO CART</MDBBtn>
       
