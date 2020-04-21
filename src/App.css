@@ -416,3 +416,16 @@ margin-left: 55px;
 #defaultFormCardPasswordEx::placeholder{
   color: white;
 }
+#line{
+  display: flex;
+  align-items: center;
+}
+#line span{
+  content:"";
+  flex: 1 1 auto;
+  border: 2px solid #d6d6e6;
+}
+.prev{
+  background-color: #c2cace;
+  color: white;
+}

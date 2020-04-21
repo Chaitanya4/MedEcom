@@ -18,7 +18,9 @@ import LoginPage from './Pages/userlogin';
 import RegisterPage from './Pages/userregister';
 import DoctorLoginPage from './Pages/doctorlogin';
 import DoctorRegisterPage from './Pages/doctorregister';
+import MedicalInfo from './Pages/medicalinformation'
 import MyComponent from './Pages/demo';
+import Vendor1 from './Pages/vendor1';
 //import FetchRandomUser from './Pages/demo2';
 import MyForm from './Pages/demoform';
 function App() {
@@ -39,6 +41,8 @@ function App() {
         <Route path="/RegisterPage" component={RegisterPage} /> 
         <Route path="/DoctorLoginPage" component={DoctorLoginPage} /> 
         <Route path="/DoctorRegisterPage" component={DoctorRegisterPage} /> 
+        <Route path="/MedicalInfo" component={MedicalInfo} /> 
+        <Route path="/Vendor1" component={Vendor1} /> 
         <Route path="/BrandList" component={MyComponent} /> 
         <Route path="/SubmitBrand" component={MyForm} /> 
         <Route render={() => <h1>Page not found</h1>} />
