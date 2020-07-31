@@ -5,7 +5,7 @@ const LoginPage = () => {
   return (
   
       <MDBRow className="mt-4 mb-4 ml-0 mr-0">
-        <MDBCol md="4">
+        <MDBCol sm="12" className="d-flex justify-content-center">
           <MDBCard className="#bdbdbd grey lighten-1">
             <MDBCardBody>
               <form>
